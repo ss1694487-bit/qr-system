@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root{font-family:'DM Sans',Arial,sans-serif;color:#101828;background:#f3f5f8;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-width:320px}
+.shell{width:min(100% - 28px,560px);margin:24px auto 40px}
+.top{display:flex;align-items:center;justify-content:space-between;margin:0 2px 18px}
+.brandmark{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.11em;color:#080808}
+.brandmark svg{color:var(--brand,#0864eb)}
+.powered{font-size:11px;color:#667085;background:#e9edf3;padding:7px 10px;border-radius:20px}
+.panel{background:#fff;border:1px solid #e7eaf0;border-radius:20px;padding:clamp(20px,5vw,32px);box-shadow:0 14px 40px rgba(16,24,40,.06)}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--brand);margin-bottom:10px}
+h1{font-size:clamp(25px,6vw,34px);line-height:1.15;margin:0 0 9px;letter-spacing:-.04em}
+.location{display:flex;align-items:center;gap:5px;color:#667085;font-size:13px;margin:0 0 17px}
+.intro{font-size:14px;line-height:1.65;color:#667085;margin:12px 0 23px}
+label{display:block;font-size:13px;font-weight:700;margin:18px 0 8px}
+input,select,textarea{width:100%;font:inherit;font-size:14px;color:#101828;background:#fff;border:1px solid #d9dee7;border-radius:10px;padding:13px 14px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 12%,transparent)}
+textarea{resize:vertical;line-height:1.55}
+.counter{text-align:right;color:#98a2b3;font-size:11px;margin-top:5px}
+button,.linkbutton{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;border:0;border-radius:11px;padding:14px 16px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none}
+.primary{background:var(--brand,#0864eb);color:#fff;margin-top:22px}
+.primary:disabled{opacity:.65;cursor:wait}
+.draft{border-top:1px solid #edf0f4;margin-top:26px;padding-top:22px}
+.draft-title{display:flex;align-items:center;gap:9px;color:#087443}
+.draft-title h2{font-size:18px;color:#101828;margin:0}
+.notice{font-size:12px;line-height:1.55;color:#667085}
+.secondary{background:#eef3ff;color:#124ba5;margin-top:12px}
+.linkbutton{margin-top:10px}
+.alert{margin-top:16px;background:#fff1f0;color:#b42318;padding:12px;border-radius:10px;font-size:13px}
+footer{text-align:center;color:#667085;font-size:11px;line-height:1.6;padding:18px 10px}
+footer p{margin:0 0 3px}
+.center{text-align:center;padding:45px 20px}
+.spin{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:420px){.shell{margin-top:14px}.panel{border-radius:16px}.top{margin-bottom:13px}}
